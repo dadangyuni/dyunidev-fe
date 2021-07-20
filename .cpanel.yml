@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/dyunidev/public_html/
+    - source /home/dyunidev/nodevenv/repositories/fe-dyunidev/12/bin/activate && cd /home/dyunidev/repositories/fe-dyunidev
+    - npm run build
+    - /bin/cp -R build/. $DEPLOYPATH
