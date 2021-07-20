@@ -4,4 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/dyunidev/public_html/
     - source /home/dyunidev/nodevenv/repositories/fe-dyunidev/12/bin/activate && cd /home/dyunidev/repositories/fe-dyunidev
     - npm install && npm run build
-    - /bin/cp build $DEPLOYPATH
+    - /bin/cp -a build/. $DEPLOYPATH
