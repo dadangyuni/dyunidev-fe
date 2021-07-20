@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Dadang Yuni Utomo Hahaha
+          Learn React Dadang Yuni Utomo Hahaha Jadi di update nih
         </a>
       </header>
     </div>
