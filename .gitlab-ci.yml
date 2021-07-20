@@ -17,7 +17,7 @@ dev-dewaweb:
     - echo "-- finish build --"
     - echo "-- starting deploy dewaweb --"
     - ssh -o StrictHostKeyChecking=no dyunidev@dyunidev.xyz
-    - scp -P2728 -r build/* dyunidev@dyunidev.xyz:public_html
+    - scp -r build/* dyunidev@dyunidev.xyz:public_html
     - echo "-- finish deploy dewaweb --"
   only:
     refs:
