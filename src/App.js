@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dadang Yuni Utomo, STTT
+          Dadang Yuni Utomo, Learn React JS
         </a>
       </header>
     </div>
