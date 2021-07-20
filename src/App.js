@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dadang Yuni Utomo, ST
+          Dadang Yuni Utomo, STTT
         </a>
       </header>
     </div>
