@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dadang Learn ReactJS
+          Dadang Learn ReactJS With CI CD Gitlab
         </a>
       </header>
     </div>
