@@ -1,0 +1,24 @@
+image: nikolaik/python-nodejs:python3.9-nodejs12
+
+dev-wam:
+  stage: deploy
+  before_script:
+    - apt install openssh-client
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+  script:
+    - echo "-- initialize --"
+    - CI=false
+    - npm install
+    - echo "-- start build --"
+    - npm run build
+    - echo "-- finish build --"
+    - echo "-- starting deploy dewaweb --"
+    - ssh -o StrictHostKeyChecking=no dyunidev@dyunidev.xyz -p 2728 "ls public_html"
+    - scp -P2728 -r build/* dyunidev@dyunidev.xyz:public_html
+    - echo "-- finish deploy dewaweb --"
+  only:
+    refs:
+      - develop
