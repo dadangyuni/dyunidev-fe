@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Best Practices ssss
+          Learn React Best Practices ssss dadang inuy
         </a>
       </header>
     </div>
