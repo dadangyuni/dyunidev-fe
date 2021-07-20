@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dadang Yuni Utomo, Learn React JS
+          Dadang Learn ReactJS With CI CD Gitlab
         </a>
       </header>
     </div>
