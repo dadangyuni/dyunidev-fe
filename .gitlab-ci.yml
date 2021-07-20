@@ -13,7 +13,7 @@ dev-dewaweb:
     - npm run build
     - echo "-- finish build --"
     - echo "-- starting deploy dewaweb --"
-    - ssh -o StrictHostKeyChecking=no dyunidev@dyunidev.xyz -p 2728 "ls public_html"
+    - ssh -o StrictHostKeyChecking=no dyunidev@dyunidev.xyz
     - scp -P2728 -r build/* dyunidev@dyunidev.xyz:public_html
     - echo "-- finish deploy dewaweb --"
   only:
