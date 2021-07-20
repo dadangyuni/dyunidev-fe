@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dadang Yuni Utomo, Learn React JS Dadang dadang
+          Dadang Learn ReactJS
         </a>
       </header>
     </div>
