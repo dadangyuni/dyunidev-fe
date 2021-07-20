@@ -1,5 +1,0 @@
----
-deployment:
-  task:
-    - export DEPLOYPATH=/home/dyunidev/public_html/
-    - /bin/cp -R public $DEPLOYPATH
