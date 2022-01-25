@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
+@import './custom.style.scss';
+
 body{
     margin: 0px;
     font-family: 'Poppins',"Roboto","Helvetica","Arial",sans-serif; 
@@ -23,6 +25,10 @@ body{
 
 .page-header{
     padding: 0px 20px;
+    .app-logo{
+        width: auto;
+        height: 50px;
+    }
     a.menu-navigation{
         text-decoration: none;
     }
@@ -31,4 +37,9 @@ body{
 .dyunidev-main{
     padding: 0px;
     margin: 0;
+}
+
+.app-footer{
+    padding: 10px;
+    margin-bottom: 10px;
 }

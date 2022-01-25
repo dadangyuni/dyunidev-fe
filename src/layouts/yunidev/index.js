@@ -12,9 +12,12 @@ const App = (props) => {
         <HeaderDev/>
         <MainContent {...props}/>
         <FooterDev/>
-      </div>
+        <div id="#my-scrollbar"/>
+      </div> 
     </BrowserRouter>
   ) ;
+
+  
 };
 
 export default App;

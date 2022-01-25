@@ -37,7 +37,7 @@ const Header = () => {
                 sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
               >
                 <Link to={main} style={{textDecoration:"none", color:"#1a2027"}}>
-                  LOGO
+                  <img className='app-logo' alt="logo" src='/images/logo.png'/>
                 </Link>
               </Typography>
               <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
