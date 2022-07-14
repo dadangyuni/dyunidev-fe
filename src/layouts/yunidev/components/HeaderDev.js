@@ -1,17 +1,19 @@
 import React from 'react';
-import { AppBar, Box, Container, 
+import { AppBar, Box, Button, Container, 
   IconButton, Menu, MenuItem, Toolbar, 
-  Typography, Button
+  Typography,
 } from '@mui/material';
 import pathName from 'routes/pathName';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
-const {main, works, projects} = pathName;
+const {main} = pathName;
 
 const pages = [
-  {text:'Works',link: works},
-  {text:'Projects',link:projects},
+  {text:'Home', link:'#home'},
+  {text:'About', link:'#about'},
+  {text:'Portofolio', link:'#portofolio'},
+  {text:'Contact', link:'#contact'},
 ];
 
 const Header = () => {
@@ -43,7 +45,6 @@ const Header = () => {
               <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                 <IconButton
                   size='large'
-                  aria-label='account of current user'
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
                   onClick={handleOpenNavMenu}
@@ -85,20 +86,16 @@ const Header = () => {
               >
                 LOGO
               </Typography>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:'flex-end'}}>
+              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, gap:'20px', justifyContent:'flex-end'}}>
                 {pages.map((page,idx) => (
                   <Link className='menu-navigation'
                     key={idx}
                     to={page.link}
                   >
-                    <Button
-                      onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: '#1a2027', display: 'block'}}
-                    >
-                      {page.text}
-                    </Button>
+                    {page.text}
                   </Link>
                 ))}
+                <Button>Icon</Button>
               </Box>
             </Toolbar>
           </Container>

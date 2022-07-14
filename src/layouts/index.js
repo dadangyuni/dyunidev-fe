@@ -1,24 +1,15 @@
 import React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import {LoadingPage} from 'components'
 import ErrorBoundary from 'utils/ErrorBoundary';
-
-
-const DyuniDev = React.lazy(()=> import('./yunidev'));
-const LovelyPorto = React.lazy(()=> import('./lovelyporto'));
+import DyuniDev from './yunidev';
+import YuniDevTailwind from './yunidevTailwind';
 
 const App = (props) => {
-    const layout = 'dyunidev';
+    const layout = 'yunidevtailwind';
     return (
-        <React.Fragment>
-            <ErrorBoundary>
-                <CssBaseline/>
-                <React.Suspense fallback={<LoadingPage/>}>
-                    {layout === 'dyunidev' && <DyuniDev {...props}/>}
-                    {layout === 'lovelyporto' && <LovelyPorto {...props}/>}
-                </React.Suspense>
-            </ErrorBoundary>
-        </React.Fragment>
+        <ErrorBoundary>
+            {layout === 'dyunidev' && <DyuniDev {...props}/>}
+            {layout === 'yunidevtailwind' && <YuniDevTailwind {...props}/>}
+        </ErrorBoundary>
     );
 };
 

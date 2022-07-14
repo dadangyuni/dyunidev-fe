@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { HeaderDev, FooterDev, 
-    MainContent
- } from './components';
+MainContent } from './components';
 import './styles/index.scss';
 
 const App = (props) => {
@@ -12,7 +11,6 @@ const App = (props) => {
         <HeaderDev/>
         <MainContent {...props}/>
         <FooterDev/>
-        <div id="#my-scrollbar"/>
       </div> 
     </BrowserRouter>
   ) ;
