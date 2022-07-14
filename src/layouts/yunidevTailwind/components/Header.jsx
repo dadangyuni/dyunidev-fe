@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const Header = () => {
   const onClickHam = (e) => {
@@ -8,28 +8,14 @@ const Header = () => {
       navMenu.classList.toggle('hidden');
   }
 
-  useEffect(()=>{
-    const onScroll = () => {
-      const header = document.querySelector('header');
-      const fixedNav = header.offsetTop;
-      
-      if(window.pageYOffset > fixedNav){
-        header.classList.add('navbar-fixed')
-      } else {
-        header.classList.remove('navbar-fixed')
-      }
-    };
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  },[])
-
   return (
-    <header className='bg-transparent absolute top-0 left-0 w-full flex items-center z-10'>
+    <header className='bg-transparent absolute top-0 left-0 w-full flex items-center z-10 navbar-fixed'>
       <div className="w-full px-10">
         <div className="flex items-center justify-between relative">
           <div className="px-4">
-            <a href="#home" className="font-bold text-lg text-primary block py-6">DadangYuni</a>
+            <a href="#home" className="font-bold text-lg text-primary block py-2">
+              <img className='w-24' src='/logo192.png' alt='logo'/>
+            </a>
           </div>
           <div className="flex items-center px-4">
             <button id='hamburger' name='hamburger' type='button' className='block absolute right-4 lg:hidden' onClick={onClickHam}>

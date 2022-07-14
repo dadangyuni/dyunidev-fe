@@ -4,7 +4,7 @@ import pathName from './pathName';
 const { main } = pathName;
 
 const routes = [
-    {path:main, name:"Home", component: React.lazy(()=> import('pages/Home')), exact: true},
+    {path:main, name:"Home", component: React.lazy(()=> import('views/home')), exact: true},
 ]
 
 export default routes;
