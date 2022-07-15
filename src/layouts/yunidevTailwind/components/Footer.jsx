@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='footer-container'>
+    <footer className='footer-container'>
       <div className='container mx-auto flex w-full justify-between items-center px-2'>
         <div className="footer-logo">
           <img className='w-14' src='/logo192.png' alt='logo'/>
@@ -11,7 +11,7 @@ const Footer = () => {
           Create with <i className="fas fa-heart" /> by Dadang
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 
