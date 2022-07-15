@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Header = () => {
   const onClickHam = (e) => {
@@ -7,6 +7,45 @@ const Header = () => {
       ham.classList.toggle('hamburger-active');
       navMenu.classList.toggle('hidden');
   }
+
+  const darkToggle = (e) => {
+    const html = document.querySelector('html');
+    const themeToggle = document.querySelector('#theme-toggle');
+
+    if(themeToggle.checked){
+      console.log(themeToggle.checked);
+      html.classList.add('dark')
+    }else{
+      html.classList.remove('dark')
+    }
+  }
+
+  useEffect(()=>{
+    const onScroll = () => {
+      const header = document.querySelector('header');
+      const toTop = document.querySelector('#to-top');
+      const fixedNav = header.offsetTop;
+      
+      if(window.pageYOffset > fixedNav){
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex');
+      } else {
+        toTop.classList.add('hidden');
+        toTop.classList.remove('flex');
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("click", (e) => {
+      const ham = document.getElementById('hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      if(e.target !== ham && e.target !== navMenu){
+        ham.classList.remove('hamburger-active');
+        navMenu.classList.add('hidden');
+      }
+    })
+
+    return () => window.removeEventListener("scroll", onScroll);
+  },[])
 
   return (
     <header className='bg-transparent absolute top-0 left-0 w-full flex items-center z-10 navbar-fixed'>
@@ -38,6 +77,21 @@ const Header = () => {
                 </li>
                 <li className='group'>
                   <a href="#contact" className='text-base text-dark py-2 mx-6 group-hover:text-primary flex'>Contact</a>
+                </li>
+                <li className='flex items-center pl-8'>
+                  <div className='flex'>
+                    <input type="checkbox" className='hidden' id='theme-toggle' onChange={darkToggle}></input>
+                    <label htmlFor="theme-toggle">
+                      <div className='flex h-6 w-[55px] cursor-pointer items-center justify-between rounded-full bg-borderLight p-[2px]'>
+                        <div className='toggle-dark h-5 w-5 rounded-full flex items-center justify-center transition-all duration-200'>
+                          <i className="fas fa-moon text-textMain"></i>
+                        </div>
+                        <div className='toggle-light bg-white h-5 w-5 rounded-full flex items-center justify-center transition-all duration-200'>
+                          <i className="fas fa-sun text-primary"></i>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
                 </li>
               </ul>
             </nav>

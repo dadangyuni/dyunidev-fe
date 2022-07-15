@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     container:{
       center:true,
@@ -17,6 +18,9 @@ module.exports = {
         yellowOne: "#FFF27E",
         bgWhite:"#FFFFFF",
         bgLight:'#EFFFFD',
+        bgDarkOne: "#164e63",
+        bgDarkTwo: "#0891b2",
+        bgDarkThree:"#0e7490",
         borderLight:"#F0F0F0"
       },
       screens:{

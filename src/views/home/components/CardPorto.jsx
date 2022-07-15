@@ -14,12 +14,12 @@ const CardPorto = ({title, poster, description, demoLink, sourceLink}) => {
             </div>
             <div className='pt-4 flex justify-between'>
                 <a href={demoLink}  className='btn-card' target="_blank" rel='noopener noreferrer'>
-                    <i class="fas fa-play"></i>
+                    <i className="fas fa-play"></i>
                     {" "}
                     Demo
                 </a>
                 <a href={sourceLink} className='btn-card' target="_blank" rel='noopener noreferrer'>
-                    <i class="fab fa-github"></i>
+                    <i className="fab fa-github"></i>
                     {" "}
                     Source
                 </a>

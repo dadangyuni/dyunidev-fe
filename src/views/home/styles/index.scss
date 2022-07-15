@@ -1,9 +1,10 @@
 .hero-container{
-    @apply pt-16 pb-5 md:pt-24 bg-gradient-to-t from-white to-bgLight min-h-screen h-full flex flex-col justify-center;
+    @apply pt-16 pb-5 md:pt-24 bg-gradient-to-t from-white to-bgLight min-h-screen h-full flex flex-col justify-center dark:bg-gradient-to-t dark:from-bgDarkTwo dark:to-bgDarkOne;
+
 }
 
 .portofolio-container{
-    @apply pt-20 pb-32 bg-bgLight;
+    @apply pt-20 pb-32 bg-bgLight dark:bg-bgDarkThree;
     .btn-base{
         @apply bg-white border-[1px] border-primary px-3 py-2 text-textPrimary w-40 font-semibold transition-all duration-200 ease-in-out;
     }
@@ -28,5 +29,5 @@
 }
 
 .contact-section{
-    @apply pb-36 pt-32 bg-gradient-to-t from-bgLight to-white  h-full
+    @apply pb-36 pt-32 bg-gradient-to-t from-bgLight to-white h-full dark:bg-gradient-to-t dark:from-bgDarkOne dark:to-bgDarkTwo
 }

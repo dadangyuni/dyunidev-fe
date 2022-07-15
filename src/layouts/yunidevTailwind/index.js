@@ -26,6 +26,12 @@ const App = (props) => {
           </BrowserRouter>
         </div>
         <Footer/>
+        <a id='to-top'
+          href='#home' 
+          className='h-14 w-14 bg-primary fixed z-[9999] rounded-full bottom-4 p-4 right-4 hidden flex-col justify-center items-center hover:animate-pulse'
+        >
+          <i className="fas fa-arrow-up text-white"></i>
+        </a>
     </div>
   )
 }
