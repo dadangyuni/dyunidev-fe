@@ -1,3 +1,28 @@
 .hero-container{
     @apply pt-16 pb-5 md:pt-24 bg-gradient-to-t from-white to-bgLight min-h-screen h-full flex flex-col justify-center;
 }
+
+.portofolio-container{
+    @apply pt-20 pb-32 bg-bgLight;
+    .btn-base{
+        @apply bg-white border-[1px] border-primary px-3 py-2 text-textPrimary w-40 font-semibold transition-all duration-200 ease-in-out;
+    }
+    .btn-active{
+        @apply bg-primary text-white
+    }
+    .list-container{
+        @apply flex flex-wrap items-stretch;
+    }
+    .item-card{
+        @apply p-2 w-full md:w-1/2 lg:w-1/4;
+        flex: 0 1 auto;
+
+        .inner-card{
+            @apply bg-white rounded-xl p-5 h-full relative flex flex-col shadow-sm
+        }
+    }
+
+    .btn-card{
+        @apply py-1 px-6 bg-primary text-white rounded-md
+    }
+}

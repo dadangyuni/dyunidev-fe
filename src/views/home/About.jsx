@@ -2,9 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id='about'>
-        <div className="container mx-auto">
-            <h1 className='text-2xl font-semibold mb-3 lg:text-5xl'>About Me</h1>
+    <section id='about' className='pt-36 pb-32'>
+        <div className="container mx-auto py-6">
+            <h1 className='text-2xl font-semibold mb-3 lg:text-4xl'>About Me</h1>
             <h3 className='text-base font-normal text-textMain lg:text-xl lg:mb-6'>
                 I'm a self-motivated learner with strong organization, time management & communication skills.
             </h3>
@@ -13,7 +13,7 @@ const About = () => {
                     <img className='rounded-xl mt-3 mb-5 mx-auto' src="/images/about_pict_1.jpg" alt="me" />
                 </div>
                 <div className='flex-auto py-5'>
-                    <h1 className='text-2xl font-semibold mb-3 lg:text-4xl'>I’am Dadang Yuni U.</h1>
+                    <h1 className='text-2xl font-semibold mb-3 lg:text-3xl'>I’am Dadang Yuni U.</h1>
                     <h3 className='text-lg font-normal mb-3 lg:text-3xl'>
                         A <span className='text-textPrimary'>Web Developer</span> Based in <span className='text-textPrimary'>Indonesia</span>
                     </h3>

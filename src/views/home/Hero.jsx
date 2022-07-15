@@ -13,13 +13,15 @@ const Hero = () => {
                     </h2>
                     <h3 className='text-textMain text-lg mb-10 md:text-2xl md:mt-2'>Who love code and build amazing things for the web. </h3>
                     <a href='#about' className='py-3 px-8 rounded-full border-[1px] bg-primary hover:opacity-80 transition duration-300 ease-in-out'>
-                        <span className='text-text'><i class="fas fa-arrow-down text-white" /></span>
+                        <span className='text-text'><i className="fas fa-arrow-down text-white" /></span>
                         <span className='mx-2 text-white'>SEE MORE</span>
                     </a>
                 </div>
                 <div className="w-full self-end lg:w-1/2">
                     <div className='mt-10'>
-                        <img src='/images/hero.png' alt='hero' className='max-w-full mx-auto'/>
+                        <div>
+                            <img src='/images/hero.png' alt='hero' className='max-w-full mx-auto'/>
+                        </div>
                     </div>
                 </div>
             </div>
