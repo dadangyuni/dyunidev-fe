@@ -7,8 +7,8 @@ const Portofolio = () => {
   return (
     <section id='portofolio' className='portofolio-container'>
       <div className="container mx-auto text-center">
-        <h1 className='text-2xl font-semibold mb-3 lg:text-4xl'>My Portofolio</h1>
-        <h3 className='text-base font-normal text-textMain lg:text-xl lg:mb-6'>
+        <h1 className='text-2xl font-semibold mb-3 lg:text-4xl dark:text-white'>My Portofolio</h1>
+        <h3 className='text-base font-normal text-textMain lg:text-xl lg:mb-6 dark:text-white'>
           Here are a few projects built completely <br/> with passion and creatifity during my spare time
         </h3>
         <div className='my-5'>
@@ -28,7 +28,7 @@ const Portofolio = () => {
             })}
           </div>}
           {btnActive === 2 && <div className='list-container'>
-            <div className='flex-auto text-center w-full p-20 bg-borderLight min-h-[350px] h-full flex flex-col justify-center rounded-lg'>Coming Soon</div>
+            <div className='flex-auto text-center w-full p-20 bg-borderLight min-h-[350px] h-full flex flex-col justify-center rounded-lg dark:bg-bgDarkThree'>Coming Soon</div>
           </div>}
         </div>
       </div>

@@ -8,8 +8,8 @@ const CardPorto = ({title, poster, description, demoLink, sourceLink}) => {
             <img className='rounded-md w-full object-cover max-h-52 h-full' src={poster} alt={title}/>
         </div>
         <div className='flex-auto flex flex-col'>
-            <h3 className='w-full text-left text-xl py-2 font-semibold'>{title}</h3>
-            <div className='flex-auto text-left text-textMain font-normal text-base'>
+            <h3 className='w-full text-left text-xl py-2 font-semibold dark:text-white'>{title}</h3>
+            <div className='flex-auto text-left text-textMain font-normal text-base dark:text-teal-50'>
                 {description}
             </div>
             <div className='pt-4 flex justify-between'>

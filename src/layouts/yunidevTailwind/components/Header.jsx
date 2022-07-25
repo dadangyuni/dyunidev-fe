@@ -67,16 +67,16 @@ const Header = () => {
             >
               <ul className='block lg:flex'>
                 <li className='group'>
-                  <a href="#home" className='text-base text-dark py-2 mx-6 group-hover:text-primary flex'>Home</a>
+                  <a href="#home" className='text-base text-dark py-2 mx-6 group-hover:text-primary flex dark:text-white dark:group-hover:text-textDarkPrimary'>Home</a>
                 </li>
                 <li className='group'>
-                  <a href="#about" className='text-base text-dark py-2 mx-6 group-hover:text-primary flex'>About</a>
+                  <a href="#about" className='text-base text-dark py-2 mx-6 group-hover:text-primary flex dark:text-white dark:group-hover:text-textDarkPrimary'>About</a>
                 </li>
                 <li className='group'>
-                  <a href="#portofolio" className='text-base text-dark py-2 mx-6 group-hover:text-primary flex'>Portofolio</a>
+                  <a href="#portofolio" className='text-base text-dark py-2 mx-6 group-hover:text-primary flex dark:text-white dark:group-hover:text-textDarkPrimary'>Portofolio</a>
                 </li>
                 <li className='group'>
-                  <a href="#contact" className='text-base text-dark py-2 mx-6 group-hover:text-primary flex'>Contact</a>
+                  <a href="#contact" className='text-base text-dark py-2 mx-6 group-hover:text-primary flex dark:text-white dark:group-hover:text-textDarkPrimary'>Contact</a>
                 </li>
                 <li className='flex items-center pl-8'>
                   <div className='flex'>

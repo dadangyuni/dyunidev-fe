@@ -18,9 +18,10 @@ module.exports = {
         yellowOne: "#FFF27E",
         bgWhite:"#FFFFFF",
         bgLight:'#EFFFFD',
-        bgDarkOne: "#164e63",
-        bgDarkTwo: "#0891b2",
-        bgDarkThree:"#0e7490",
+        bgDarkOne: "#0F8183",
+        bgDarkTwo: "#10A6B1",
+        bgDarkThree:"#10A6B1",
+        textDarkPrimary: '#85F4FF',
         borderLight:"#F0F0F0"
       },
       screens:{

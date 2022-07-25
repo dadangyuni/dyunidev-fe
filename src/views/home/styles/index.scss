@@ -4,12 +4,12 @@
 }
 
 .portofolio-container{
-    @apply pt-20 pb-32 bg-bgLight dark:bg-bgDarkThree;
+    @apply pt-20 pb-32 bg-bgLight dark:bg-bgDarkOne;
     .btn-base{
-        @apply bg-white border-[1px] border-primary px-3 py-2 text-textPrimary w-40 font-semibold transition-all duration-200 ease-in-out;
+        @apply bg-white border-[1px] border-primary px-3 py-2 text-textPrimary w-40 font-semibold transition-all duration-200 ease-in-out dark:bg-transparent dark:border-textDarkPrimary dark:text-textDarkPrimary;
     }
     .btn-active{
-        @apply bg-primary text-white
+        @apply bg-primary text-white dark:bg-textDarkPrimary dark:text-dark
     }
     .list-container{
         @apply flex flex-wrap items-stretch;
@@ -19,12 +19,12 @@
         flex: 0 1 auto;
 
         .inner-card{
-            @apply bg-white rounded-xl p-5 h-full relative flex flex-col shadow-sm
+            @apply bg-white rounded-xl p-5 h-full relative flex flex-col shadow-sm dark:bg-bgDarkThree
         }
     }
 
     .btn-card{
-        @apply py-1 px-6 bg-primary text-white rounded-md hover:opacity-80 transition duration-300 hover:shadow-lg
+        @apply py-1 px-6 bg-primary text-white rounded-md hover:opacity-80 transition duration-300 hover:shadow-lg dark:bg-bgDarkOne
     }
 }
 
