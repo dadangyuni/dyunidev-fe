@@ -13,7 +13,6 @@ const Header = () => {
     const themeToggle = document.querySelector('#theme-toggle');
 
     if(themeToggle.checked){
-      console.log(themeToggle.checked);
       html.classList.add('dark')
     }else{
       html.classList.remove('dark')
@@ -63,7 +62,7 @@ const Header = () => {
               <span className='origin-bottom-left hamburger-line transition duration-300 ease-in-out'></span>
             </button>
             <nav id="nav-menu" 
-              className='hidden absolute right-4 top-full py-5 bg-white rounded-lg shadow-lg max-w-[200px] w-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none'
+              className='hidden absolute right-4 top-full py-5 bg-white rounded-lg shadow-lg max-w-[200px] w-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none dark:bg-bgDarkTwo lg:dark:bg-transparent'
             >
               <ul className='block lg:flex'>
                 <li className='group'>
